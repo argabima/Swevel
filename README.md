@@ -44,11 +44,11 @@ Plugin yang digunakan
 
 ## The Development Team
 
-Arga Bimantara
+1. Arga Bimantara
 
-Sendi
+2. Sendi
 
-Abdul Aziz
+3. Abdul Aziz
 
 Want to contribute? Great!
 
