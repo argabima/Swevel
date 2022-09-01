@@ -45,10 +45,13 @@ Plugin yang digunakan
 ## The Development Team
 
 Arga Bimantara
-Sendi 
+
+Sendi
+
 Abdul Aziz
 
 Want to contribute? Great!
+
 Plz contact my team
 
 ## License
