@@ -12,11 +12,11 @@ class Course extends BaseController
         return view('swevel/course/course', $data);
     }
 
-    // public function detailArtikel()
-    // {
-    //     $data = [
-    //         'title' => 'Detail Artikel'
-    //     ];
-    //     return view('swevel/artikel/detail_artikel', $data);
-    // }
+    public function detailCourse()
+    {
+        $data = [
+            'title' => 'Detail Course'
+        ];
+        return view('swevel/course/detail_course', $data);
+    }
 }
