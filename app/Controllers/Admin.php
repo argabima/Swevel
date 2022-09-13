@@ -12,11 +12,26 @@ class Admin extends BaseController
         return view('swevel/admin/dashboard', $data);
     }
 
+    public function aboutus()
+    {
+        $data = [
+            'title' => 'About Us'
+        ];
+        return view('swevel/admin/admin-about-us', $data);
+    }
+
     public function faq()
     {
         $data = [
             'title' => 'FAQ',
         ];
         return view('swevel/admin/admin_faq', $data);
+    }
+    public function article()
+    {
+        $data = [
+            'title' => 'Artikel',
+        ];
+        return view('swevel/admin/admin-article', $data);
     }
 }

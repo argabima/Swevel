@@ -64,6 +64,8 @@ $routes->get('/course', 'Course::index');
 // ADMIN
 $routes->get('/dashboard', 'Admin::index');
 $routes->get('/admin-faq', 'Admin::faq');
+$routes->get('/admin-about-us', 'Admin::aboutus');
+$routes->get('/admin-artikel', 'Admin::article');
 
 
 //  PERCOBAAN
