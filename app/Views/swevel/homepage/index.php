@@ -59,47 +59,67 @@ function circle()
 
     <!-- /.Pengenalan -->
 
-    <section>
-        <div class="container mt-5">
-            <h1 class="fw-bold">What is <span class="ch_color">SWEVEL</span> ?</h1>
-            <div class="row mb-3">
-                <div class="col">
-                    <p>PT. Swevel Universal Media</p>
-                </div>
-            </div>
-            <div class="row mb-5">
-                <div class="col">
-                    <img src="/img/pexels-fauxels-3184652 1.jpeg" width="100%">
-                </div>
-            </div>
-            <div class="row justify-content-between mb-3">
-                <div class="col-4">
-                    <h4><strong>Definisi Swevel</strong></h4>
-                </div>
-                <div class="col-4">
-                    <h4><strong>Visi Misi Swevel</strong></h4>
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col">
-                    <div class="row pr-3">
-                        <p>PT. Swevel Universal Media is one of Information Technology Service Industry that gives service excellence quality. Point of product of PT. Swevel Universal Media prioritize System End User and gives creative solution IT.
-                            PT. Swevel Universal Media focus in WEB Developer and Mobile Smart Phone Application.
-                        </p>
+    <section class="box2">
+        <div class="container">
+            <div class="row" id="section2">
+                <div class="col-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h2><strong>Definition Of Swevel</strong></h2>
+                                    <div class="button-0">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <p style="color: #474545">PT. Swevel Universal Media</p>
+                                </button>
+                            </h2>
+
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p>PT. Swevel Universal Media is one of Information Technology Service Industry that gives service excellence quality. Point of product of PT. Swevel Universal Media prioritize System End User and gives creative solution IT.
+                                        PT. Swevel Universal Media focus in WEB Developer and Mobile Smart Phone Application.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h2><strong>Visi & Mision</strong></h2>
+                                    <div class="button-0">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <p style="color: #474545">PT. Swevel Universal Media</p>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <h2><strong>Location</strong></h2>
+                                    <div class="button-0">
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <p style="color: #474545">PT. Swevel Universal Media</p>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p><strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="row pr-3">
-                        <p>PT. Swevel Universal Media is one of Information Technology Service Industry that gives service excellence quality. Point of product of PT. Swevel Universal Media prioritize System End User and gives creative solution IT.
-                            PT. Swevel Universal Media focus in WEB Developer and Mobile Smart Phone Application.
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="row pr-3">
-                        <p>PT. Swevel Universal Media is one of Information Technology Service Industry that gives service excellence quality. Point of product of PT. Swevel Universal Media prioritize System End User and gives creative solution IT.
-                            PT. Swevel Universal Media focus in WEB Developer and Mobile Smart Phone Application.
-                        </p>
+                <div class="col-4">
+                    <div class="big-O"></div>
+                    <div class="gmbr">
+                        <img src="/img/separo.png" class="img-weight">
                     </div>
                 </div>
             </div>

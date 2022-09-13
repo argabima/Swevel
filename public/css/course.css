@@ -1,6 +1,5 @@
     /* GLOBAL STYLES
 -------------------------------------------------- */
-  
     
     .ch_color {
         color: #5423a1;
@@ -9,7 +8,7 @@
     .spasi {
         line-height: 50px;
     }
-           
+    
     .searchbar {
         margin-bottom: auto;
         margin-top: auto;
@@ -43,21 +42,22 @@
         border-color: #000;
     }
     
-    .btn-category{
+    .btn-category {
         color: #ffffff;
         background-color: #5423a1;
         border-radius: 0px;
         padding: 8px 50px;
         border-radius: 10px;
     }
-    .btn-category:hover{
+    
+    .btn-category:hover {
         color: #ffffff;
         background-color: #2d0869;
         transform: scale(1.1);
         transition: all .5s;
-        border-radius: 10px;        
+        border-radius: 10px;
     }
-/*     
+    /*     
     .course-section {
         margin-top: 120px;
     } */
@@ -111,6 +111,98 @@
     .heading {
         margin-right: 90px;
     }
+    
+    .circle-4 .circlecourse {
+        background-color: #773CD3;
+        width: 27px;
+        height: 27px;
+        margin: -5px 9px;
+        border-radius: 50px;
+    }
+    
+    .circle-4 {
+        position: absolute;
+        transform: translate(417%, -157%);
+        z-index: 10
+    }
+    
+    .circle-5 .circlecourse {
+        background-color: rgba(119, 60, 211, 0.6);
+        width: 27px;
+        height: 27px;
+        margin: -5px 9px;
+        border-radius: 50px;
+    }
+    
+    .circle-5 {
+        position: absolute;
+        transform: translate(-3%, 153%);
+        z-index: 10;
+    }
+    
+    .kotak-text {
+        position: relative;
+        height: 211px;
+        width: 383px;
+        background-color: #45188B;
+        display: flex;
+        justify-content: center;
+        top: -25em;
+        right: 16em;
+    }
+    
+    .kotak-text .row {
+        margin: 50px 90px 50px 30px;
+    }
+    
+    .borderkotak {
+        position: absolute;
+        height: 155px;
+        width: 153px;
+        border-width: 6px;
+        border-style: solid;
+        border-color: #45188B;
+        z-index: -1;
+        transform: translate(-295%, -175%);
+    }
+    
+    .row #section1 {
+        height: 238px;
+    }
+    
+    #row-rev {
+        margin-left: 20px;
+    }
+    
+    .text2 {
+        margin-left: auto;
+        margin-right: 450px;
+        position: absolute;
+        transform: translate(0%, -50%);
+    }
+    
+    .text2 h1 {
+        letter-spacing: normal;
+        font-size: 40px;
+    }
+    
+    .line {
+        width: 150px;
+        height: 5px;
+        background-color: #000;
+    }
+    
+    .bi-alarm-fill {
+        font-size: 50px;
+    }
+    
+    .col #sp {
+        margin-right: 50px;
+    }
+    
+    .responsive .row {
+        display: none;
+    }
     /* RESPONSIVE CSS
 -------------------------------------------------- */
     
@@ -136,6 +228,41 @@
             padding: 4px 9px 4px 9px;
             ;
         }
+        .text2 {
+            margin: auto;
+            position: absolute;
+        }
+        .text2 h1 {
+            letter-spacing: normal;
+            font-size: 40px;
+        }
+        .line {
+            width: 150px;
+            height: 5px;
+            background-color: #000;
+        }
+        .align-self-start {
+            display: none;
+        }
+        .borderkotak {
+            display: none;
+        }
+        .kotak-text {
+            margin: auto;
+            position: relative;
+            top: -14em;
+            right: auto;
+        }
+        .responsive .row {
+            display: block;
+            margin: auto;
+            position: relative;
+            top: -13em;
+            right: auto;
+        }
+        .responsive .row h4 {
+            margin-left: 28%
+        }
     }
     
     @media (max-width: 767px) {
@@ -144,6 +271,47 @@
         }
         .button-done:hover {
             transform: translate(23%, 1%);
+        }
+        .circle-4 .circlecourse {
+            display: none;
+        }
+        .align-self-start {
+            display: none;
+        }
+        .borderkotak {
+            display: none;
+        }
+        .line {
+            display: none;
+        }
+        .text2 h1 {
+            font-size: xx-large;
+            display: ruby-base-container;
+        }
+        .bi-alarm-fill {
+            font-size: 30px;
+        }
+        .kotak-text {
+            width: 200px;
+            height: 150px;
+            position: relative;
+            top: -10em;
+            right: auto;
+        }
+        .kotak-text h3 {
+            text-align: center;
+            font-size: 20px;
+            transform: translate(24%, -30%);
+        }
+        .responsive .row {
+            display: block;
+            margin: auto;
+            position: relative;
+            top: -10em;
+            right: auto;
+        }
+        .responsive .row h4 {
+            margin-left: 14%
         }
     }
     
