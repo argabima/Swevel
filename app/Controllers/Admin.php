@@ -27,11 +27,27 @@ class Admin extends BaseController
         ];
         return view('swevel/admin/admin_faq', $data);
     }
+
     public function article()
     {
         $data = [
             'title' => 'Artikel',
         ];
-        return view('swevel/admin/admin-article', $data);
+        return view('swevel/admin/admin-artikel', $data);
+        // return view('swevel/admin/admin-article', $data);
+    }
+    public function event()
+    {
+        $data = [
+            'title' => 'Event',
+        ];
+        return view('swevel/admin/admin-event', $data);
+    }
+    public function portofolio()
+    {
+        $data = [
+            'title' => 'Portofolio',
+        ];
+        return view('swevel/admin/admin-portofolio', $data);
     }
 }
