@@ -33,7 +33,7 @@ class Admin extends BaseController
         $data = [
             'title' => 'Artikel',
         ];
-        return view('swevel/admin/admin-artikel', $data);
+        return view('swevel/admin/admin-article', $data);
         // return view('swevel/admin/admin-article', $data);
     }
     public function event()

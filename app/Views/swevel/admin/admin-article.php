@@ -15,7 +15,7 @@
             <div class="mb-4">
                 <textarea class="form-control border-0 p-4 is-invalid shadow" id="content-article" placeholder="write article here ..."></textarea>
                 <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                    Please choose a username.
+                    Please add content
                 </div>
             </div>
         </div>

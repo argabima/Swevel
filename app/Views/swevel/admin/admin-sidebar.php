@@ -27,9 +27,9 @@
         <div class="mx-auto mt-3" style="max-height: 10px;width:80%">
             <div class="sidebar-nav-item text-center" style="border-top: 1.5px solid #fff"></div>
         </div>
-        <a href="#" class="sidebar-nav-item active">About Us <i class="fa-solid fa-angle-right"></i></a>
+        <a href="/admin-about-us" class="sidebar-nav-item active">About Us <i class="fa-solid fa-angle-right"></i></a>
         <div class="sidebar-nav-dropdown">
-            <a href="#!" class="sidebar-nav-item sidebar-nav-dropdown-toggle">Services <i class="fa-solid fa-angle-right"></i></a>
+            <a href="#" class="sidebar-nav-item sidebar-nav-dropdown-toggle">Services <i class="fa-solid fa-angle-right"></i></a>
             <div class="sidebar-nav-dropdown-menu">
                 <a href="/admin-event" class="sidebar-nav-dropdown-item">Event <i class="fa-solid fa-angle-right"></i></a>
                 <a href="/admin-course" class="sidebar-nav-dropdown-item">Course <i class="fa-solid fa-angle-right"></i></a>
@@ -39,7 +39,7 @@
         <a href="/admin-artikel" class="sidebar-nav-item">Article <i class="fa-solid fa-angle-right"></i></a>
         <a href="/admin-portofolio" class="sidebar-nav-item">Portfolio <i class="fa-solid fa-angle-right"></i></a>
         <a href="#" class="sidebar-nav-item">Testimoni <i class="fa-solid fa-angle-right"></i></a>
-        <a href="#" class="sidebar-nav-item">FAQ <i class="fa-solid fa-angle-right"></i></a>
+        <a href="/admin-faq" class="sidebar-nav-item">FAQ <i class="fa-solid fa-angle-right"></i></a>
         <a href="#" class="sidebar-nav-item">Contact Us <i class="fa-solid fa-angle-right"></i></a>
     </nav>
 </div>
