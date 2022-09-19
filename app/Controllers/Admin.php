@@ -56,6 +56,13 @@ class Admin extends BaseController
         ];
         return view('swevel/admin/admin-event', $data);
     }
+    public function moreEvent()
+    {
+        $data = [
+            'title' => 'More Event',
+        ];
+        return view('swevel/admin/admin-more-event', $data);
+    }
     public function portofolio()
     {
         $data = [

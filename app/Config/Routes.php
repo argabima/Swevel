@@ -69,6 +69,7 @@ $routes->post('/add-artikel', 'Admin::addArticle');
 
 $routes->get('/admin-event', 'Admin::event');
 $routes->get('/admin-portofolio', 'Admin::portofolio');
+$routes->get('/more-event', 'Admin::moreEvent');
 
 
 // User
