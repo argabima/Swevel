@@ -8,9 +8,21 @@
 .text-purple-100{
     color: #45188B;    
 }
+.btn-outline-purple{
+    background: white;
+    border: 1px solid #773CD3;    
+}
 .btn-purple{
     background: #773CD3;
     color: #fff;
+}
+.btn-purple-50{
+    background: #DDC2FF;    
+}
+.btn-purple-50:hover{
+    background: #b38de0;    
+    border: none;
+    color:white;
 }
 .btn-purple-100{
     background: #45188B;
@@ -34,6 +46,14 @@
 .text-orange{
     color: orange;
 }
+.w-150px{
+    width: 150px;
+}
+.border-bottom-purple{
+    border-bottom: 3px solid #773CD3;
+}
+
+
 
 /*  */
 /* Service / Produk Layanan */
@@ -553,6 +573,14 @@ section#page-first {
 {
     font-size: 15px;
 }
+
+
+
+
+
+
+/* USER */
+
 
 
 

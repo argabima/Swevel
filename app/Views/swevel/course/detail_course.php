@@ -266,9 +266,13 @@ function circlecourse()
 <script>
     $(document).ready(function() {
         // mengatur tinggi line
-        let heightCol1 = $('.timeline .col1')[0].scrollHeight;
+        // hitung dulu colom pertama
+        let heightCol1 = $('.timeline .col2')[0].scrollHeight;
+        // hitung tinggi step number
         let heightStepNumber = $('.timeline .step-number')[0].scrollHeight;
+        // mengatur line pertama
         $('.line-before').css('height', (heightCol1 / 2) - heightStepNumber);
+        // mengatur line kedua
         $('.line-after').css('height', (heightCol1 / 2) + heightStepNumber);
 
         relatedCourse();

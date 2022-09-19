@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </header>
-            
+
             <div class="main-content">
                 <?= $this->renderSection('content'); ?>
             </div>
@@ -135,6 +135,8 @@
             pieChart();
         })
     </script>
+
+
 </body>
 
 </html>

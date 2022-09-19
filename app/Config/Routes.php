@@ -71,6 +71,13 @@ $routes->get('/admin-event', 'Admin::event');
 $routes->get('/admin-portofolio', 'Admin::portofolio');
 
 
+// User
+
+$routes->get("/materi", "User::materi");
+$routes->get("/kuis", "User::kuis");
+$routes->get("/course-saved", "User::savedCourse");
+
+
 //  PERCOBAAN
 // movie
 $routes->get('/movie', 'Movie::index');
