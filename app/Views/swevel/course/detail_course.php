@@ -125,7 +125,17 @@ function circlecourse()
             </div>
         </div>
 
-        <div class="row mt-2 mb-5 pb-5 justify-content-center" id="section3">
+
+        <div class="mt-5 mb-5 pb-5 text-center">
+            <div class="h2 text-purple fw-bold mb-4">Android Developer</div>
+            <div class="d-flex justify-content-center">
+                <div class="col-lg-8">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est provident repellat mollitia blanditiis possimus assumenda alias sequi laudantium perferendis. Dolore a, odio cum eaque vitae perferendis nam voluptatibus, atque iusto, iure molestias quaerat dicta neque pariatur officia maiores! Voluptatem perspiciatis minus dolorem reprehenderit magni minima est unde, eum aliquam facilis!
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4 pt-4 mb-5 pb-5 justify-content-center" id="section3">
             <div class="col">
                 <img src="/img/poster2.png" class="detail-img2">
             </div>
@@ -140,105 +150,154 @@ function circlecourse()
             </div>
         </div>
 
-        <div class="row mt-lg-5 pt-lg-5 mb-lg-5 pb-5">
-            <div class="col-6 border-end">
-                <div class="text-center fw-bold h5 mb-5">Timeline Course</div>
-                <div class="text-purple fw-bold mb-3">23 September 2022 - 26 September 2022</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ex eaque, veniam omnis sapiente autem saepe in inventore iusto odio exercitationem quasi assumenda. Vero hic ipsa earum dolor, voluptas pariatur. Nesciunt dolorem ad, doloribus excepturi enim veniam maiores id hic quaerat dignissimos aliquam, ea ipsam labore unde a obcaecati et.</p>
-                <div class="text-purple fw-bold mb-3">23 September 2022 - 26 September 2022</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ex eaque, veniam omnis sapiente autem saepe in inventore iusto odio exercitationem quasi assumenda. Vero hic ipsa earum dolor, voluptas pariatur. Nesciunt dolorem ad, doloribus excepturi enim veniam maiores id hic quaerat dignissimos aliquam, ea ipsam labore unde a obcaecati et.</p>
-                <div class="text-purple fw-bold mb-3">23 September 2022 - 26 September 2022</div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati ex eaque, veniam omnis sapiente autem saepe in inventore iusto odio exercitationem quasi assumenda. Vero hic ipsa earum dolor, voluptas pariatur. Nesciunt dolorem ad, doloribus excepturi enim veniam maiores id hic quaerat dignissimos aliquam, ea ipsam labore unde a obcaecati et.</p>
-            </div>
-            <div class="col-6 border-start">
-                <div class="text-center fw-bold h5 mb-5">Our Speakers</div>
-                <!-- LOGIKA : buat angka dahulu. jika angka ganjil maka gambar berada di kiri, tetapi jika angkanya genap maka gambar berada di kanan.-->
-                <?php for ($i = 1; $i <= 3; $i++) : ?>
-                    <!-- jika angka ganjil maka gambar di kiri -->
-                    <?php if ($i % 2 == 1) :  ?>
-                        <div class="card mb-3 border-0 mb-5" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <div class="card-img-circle">
-                                        <img src="https://img.okezone.com/content/2022/05/04/33/2589370/manager-rizky-billar-sebut-rico-valentino-babak-belur-dipukuli-10-orang-TjvvVtjDZO.jpg" class=" img-circle" alt="...">
+
+        <div>
+            <?php for ($i = 1; $i < 6; $i++) : ?>
+                <div class="row timeline">
+                    <div class="col-lg-5 col-md-6 col-sm-12 col1">
+                        <div class="card shadow border-0 mb-lg-5 mb-md-5">
+                            <div class="card-body">
+                                <div class="small mb-3">
+                                    <i class="fa-solid fa-signal text-purple"></i>
+                                    <span class="ms-3">Langkah <?= $i; ?></span>
+                                </div>
+                                <div class="fw-bold">Memulai Pemrograman dengan kotlin</div>
+                                <div class="d-flex justify-content-between mt-3">
+                                    <div>
+                                        <i class="fa-regular fa-clock text-purple"></i>
+                                        <span class="ms-3">50 Jam</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-orange"></i>
+                                        <span class="ms-3">4,8</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-chart-simple text-purple"></i>
+                                        <span class="ms-3">Basic - Beginner</span>
                                     </div>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-purple fw-bold">Mr Albert Douge</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between mt-4 mb-4">
+                                    <div>
+                                        <i class="fa-solid fa-book"></i>
+                                        <span class="ms-3">119 Modul</span>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fa-users"></i>
+                                        <span class="ms-3">134 People join this course</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    <?php else :  ?>
-                        <!-- jika angka genap maka gambar di kanan -->
-                        <div class="card mb-3 border-0 mb-5" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-purple fw-bold">Mr Albert Douge</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="card-img-circle">
-                                        <img src="https://img.okezone.com/content/2022/05/04/33/2589370/manager-rizky-billar-sebut-rico-valentino-babak-belur-dipukuli-10-orang-TjvvVtjDZO.jpg" class=" img-circle" alt="...">
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="col-lg-2 text-center col2 d-lg-block d-md-none d-sm-none">
+                        <div class="text-center">
+                            <div class="pt-5 line-timeline line-before"></div>
+                            <div class="h5 step-number"><?= $i; ?></div>
+                            <div class="pt-5 line-timeline line-after"></div>
                         </div>
-                    <?php endif; ?>
-                <?php endfor; ?>
-            </div>
-        </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-sm-12 col3 mb-sm-5 pb-sm-5 mb-md-5 pb-md-5">
+                        <div class="fw-bold mb-3 h5 pt-5">Langkah <?= $i; ?></div>
+                        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto impedit, assumenda ab at sequi beatae provident sint numquam quibusdam mollitia?</div>
+                    </div>
+                </div>
+            <?php endfor; ?>
 
-        <div class="text-center mb-5">
-            <button class="btn btn-purple-100">Join Now</button>
-        </div>
-
-        <div class="row mb-5 justify-content-start">
-            <h1 style="color: black; letter-spacing:normal"><strong>Related Course</strong></h1>
-        </div>
-
-        <div class="slide-container swiper">
-            <div class="slide-content slide-content-course">
-                <div class="card-wrapper swiper-wrapper">
-                    <?php for ($i = 1; $i < 10; $i++) : ?>
-                        <div class="card card-course swiper-slide shadow border-0">
-                            <div class="course-circle-time fw-bold">3 Weeks</div>
-                            <div class="image-content">
-                                <span class="overlay"></span>
-                                <div class="card-image.">
-                                    <div class="course-img-polygon">
-                                        <img src="https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000" alt="" class="card-img">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-content ps-4 py-4">
-                                <h5 class="card-title fw-bold lh-base">How to start being a Software Developer </h5>
-                                <div class="row">
-                                    <div class="col-sm-8 col-md-6 col-lg-12">
-                                        <p class="card-text h6 text-decoration-line-through text-secondary">Rp 500.000</p>
-                                        <p class="card-text h5 fw-bold text-danger">Rp 325.000</p>
-                                    </div>
-                                    <div class="col-sm-4 col-md-6 col-lg-12 text-sm-end  text-lg-start">
-                                        <button class="btn btn-sm btn-purple-100 mt-2">Join Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="#" class="text-decoration-none btn btn-sm btn-light fw-bold course-btn-read-more">Read More</a>
+            <div class="mt-5 text-center">
+                <div class="fw-bold text-capitalize">Jadilah android Developer seperti mereka</div>
+                <div class="d-flex justify-content-center mt-3">
+                    <?php for ($i = 0; $i < 8; $i++) : ?>
+                        <div class="card-img-circle-50">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ-YIPLhIBLVQKh_S4BNo18b03Ct5P_iYFeBBjDCYx&s" alt="">
                         </div>
                     <?php endfor; ?>
                 </div>
+                <div class="text-center mt-4">
+                    <button class="btn btn-purple">Start Class</button>
+                </div>
             </div>
-            <div class="swiper-button-next swiper-navBtn"></div>
-            <div class="swiper-button-prev swiper-navBtn"></div>
-            <div class="swiper-pagination"></div>
         </div>
-    </div>
 
+        <div class="row mb-5 mt-5 pt-5 justify-content-start">
+            <h1 style="color: black; letter-spacing:normal"><strong>Related Course</strong></h1>
+        </div>
+        <section id="related-course" class="mb-5 pb-5">
+            <div class="row ">
+                <div class="splide related-course">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <?php for ($i = 0; $i < 5; $i++) : ?>
+                                <div class="col-md-4 splide__slide m-2">
+                                    <div class="card card-course border-0 shadow">
+                                        <div class="course-circle-time fw-bold">3 Weeks</div>
+                                        <div class="image-content">
+                                            <span class="overlay"></span>
+                                            <div class="card-image.">
+                                                <div class="course-img-polygon">
+                                                    <img src="https://img.freepik.com/premium-photo/astronaut-outer-open-space-planet-earth-stars-provide-background-erforming-space-planet-earth-sunrise-sunset-our-home-iss-elements-this-image-furnished-by-nasa_150455-16829.jpg?w=2000" alt="" class="card-img">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-content ps-4 py-4">
+                                            <h5 class="card-title fw-bold lh-base">How to start being a Software Developer </h5>
+                                            <div class="row">
+                                                <div class="col-sm-8 col-md-6 col-lg-12">
+                                                    <p class="card-text h6 text-decoration-line-through text-secondary">Rp 500.000</p>
+                                                    <p class="card-text h5 fw-bold text-danger">Rp 325.000</p>
+                                                </div>
+                                                <div class="col-sm-4 col-md-6 col-lg-12 text-sm-end  text-lg-start">
+                                                    <button class="btn btn-sm btn-purple-100 mt-2">Join Now</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="text-decoration-none btn btn-sm btn-light fw-bold course-btn-read-more">Read More</a>
+                                    </div>
+                                </div>
+                            <?php endfor; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
 </section>
+
+<script>
+    $(document).ready(function() {
+        // mengatur tinggi line
+        let heightCol1 = $('.timeline .col1')[0].scrollHeight;
+        let heightStepNumber = $('.timeline .step-number')[0].scrollHeight;
+        $('.line-before').css('height', (heightCol1 / 2) - heightStepNumber);
+        $('.line-after').css('height', (heightCol1 / 2) + heightStepNumber);
+
+        relatedCourse();
+    })
+
+    let relatedCourse = () => {
+        let mediaSm = window.matchMedia("(max-width: 576px)");
+        let mediaMd = window.matchMedia("(max-width: 577px)");
+        if (mediaSm.matches) {
+            var perPage = 1;
+        } else if (mediaMd.matches) {
+            var perPage = 3;
+        } else {
+            var perPage = 3;
+        }
+        var splide = new Splide('.splide.related-course', {
+            // type: 'loop',
+            perPage: perPage,
+            rewind: true,
+            arrows: false,
+            // autoplay: true,
+            // speed: 2000,
+            // width: '100%',
+            // padding: '10px',
+        });
+
+        splide.mount();
+    }
+</script>
 
 <?= $this->include('swevel/homepage/footer'); ?>
 <?= $this->include('swevel/training/footer'); ?>
