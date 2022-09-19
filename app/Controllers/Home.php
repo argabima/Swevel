@@ -11,6 +11,14 @@ class Home extends BaseController
         ];
         return view('swevel/index_homepage', $data);
     }
+
+    public function auth()
+    {
+        $data = [
+            'title' => 'Login',
+        ];
+        return view('swevel/auth', $data);
+    }
     public function faq()
     {
         $data = [

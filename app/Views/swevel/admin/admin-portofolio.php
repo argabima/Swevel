@@ -1,25 +1,3 @@
-<style>
-    #portfolio #portfolioImg .col-12 {
-        margin-bottom: 0.5rem;
-        padding-top: 0;
-        padding-bottom: 0;
-        padding-right: 0.25rem;
-        padding-left: 0.25rem;
-    }
-
-    #portfolio #inputfile {
-        background-color: #ddd;
-        color: #000;
-        font-weight: 600;
-        letter-spacing: 1px;
-    }
-
-    #portfolio input[type="date"] {
-        background-color: #ddd;
-        color: #000;
-        letter-spacing: 3px;
-    }
-</style>
 <?= $this->extend('swevel/admin/admin-template'); ?>
 <?= $this->section('content'); ?>
 
@@ -100,15 +78,5 @@
         <button class="btn btn-purple my-5 w-100" type="button">Publish</button>
     </div>
 </div>
-
-
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('#datepicker').datepicker();
-        $('#inputfile').click(function() {
-            $('#formfile').click();
-        });
-    });
-</script>
 
 <?= $this->endSection(); ?>

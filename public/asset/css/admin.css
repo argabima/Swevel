@@ -358,6 +358,31 @@ a:hover {
   margin-right: 27px;
 }
 
+
+/* ADMIN PORTOFOLIO */
+#portfolio #portfolioImg .col-12 {
+  margin-bottom: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
+
+#portfolio #inputfile {
+  background-color: #ddd;
+  color: #000;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#portfolio input[type="date"] {
+  background-color: #ddd;
+  color: #000;
+  letter-spacing: 3px;
+}
+
+
+
 @media (max-width: 768px) {
   .sidebar.mobile-show .row {
     width: 100%;

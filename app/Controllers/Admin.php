@@ -32,9 +32,22 @@ class Admin extends BaseController
     {
         $data = [
             'title' => 'Artikel',
+            'category' => 'add'
         ];
         return view('swevel/admin/admin-article', $data);
-        // return view('swevel/admin/admin-article', $data);
+    }
+
+    public function addArticle()
+    {
+        $data = $this->request->getVar();
+    }
+    public function editArticle()
+    {
+        $data = [
+            'title' => 'Edit Artikel',
+            'category' => 'edit'
+        ];
+        return view('swevel/admin/admin-article', $data);
     }
     public function event()
     {

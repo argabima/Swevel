@@ -36,10 +36,8 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/kontak', 'Kontak::index');
-$routes->delete('/kontak/(:num)', 'Kontak::delete/$1');
-$routes->post('/kontak/save', 'Kontak::save');
-$routes->post('/kontak/update', 'Kontak::update');
+$routes->get('/login', 'Home::auth');
+
 
 
 // training page
@@ -66,6 +64,9 @@ $routes->get('/dashboard', 'Admin::index');
 $routes->get('/admin-faq', 'Admin::faq');
 $routes->get('/admin-about-us', 'Admin::aboutus');
 $routes->get('/admin-artikel', 'Admin::article');
+$routes->get('/edit-artikel', 'Admin::editArticle');
+$routes->post('/add-artikel', 'Admin::addArticle');
+
 $routes->get('/admin-event', 'Admin::event');
 $routes->get('/admin-portofolio', 'Admin::portofolio');
 
