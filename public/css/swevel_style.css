@@ -663,7 +663,7 @@ section#page-first {
   }
   #status .main {
     margin-left: 250px;
-    padding: 85px;
+    padding:  50px 85px;
     width: calc(100% - 250px);
     height: 100%;
     background: #FCFCFC;

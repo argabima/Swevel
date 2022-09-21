@@ -26,10 +26,20 @@
 </head>
 
 <body>
-
-    <?= $this->renderSection('content'); ?>
-
-    <?= $this->renderSection('user'); ?>
+    <?= $this->include('swevel/navbar'); ?>
+    <section id="user" class="d-flex">
+        <div class="side-bar">
+            <ul class="sidebar">
+                <li><a href="#" class="active fw-bold">All Transaction</a></li>
+                <li><a href="#">Done Transaction</a></li>
+                <li><a href="#">Waiting for Payment</a></li>
+                <li><a href="#">Failed Transaction</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <?= $this->renderSection('content'); ?>
+        </div>
+    </section>
 
 
 
