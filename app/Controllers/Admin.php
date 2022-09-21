@@ -70,4 +70,11 @@ class Admin extends BaseController
         ];
         return view('swevel/admin/admin-portofolio', $data);
     }
+    public function payment()
+    {
+        $data = [
+            'title' => 'Payment',
+        ];
+        return view('swevel/payment/payment', $data);
+    }
 }

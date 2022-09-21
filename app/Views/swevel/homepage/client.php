@@ -42,7 +42,7 @@
             </div>
         </div> -->
 
-        <div class="row pb-5">
+        <div class="pb-5">
             <div class="splide splide-client">
                 <div class="splide__track">
                     <div class="splide__list">
@@ -71,11 +71,11 @@
 
     let sliderClient = () => {
         let mediaSm = window.matchMedia("(max-width: 576px)");
-        let mediaMd = window.matchMedia("(max-width: 577px)");
+        let mediaMd = window.matchMedia("(min-width: 577px)");
         if (mediaSm.matches) {
             var perPage = 1;
         } else if (mediaMd.matches) {
-            var perPage = 4;
+            var perPage = 2;
         } else {
             var perPage = 4;
         }

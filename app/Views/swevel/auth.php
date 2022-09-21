@@ -61,22 +61,22 @@
                             <form action="#register.php" method="POST">
                                 <div class="row">
                                     <div class="col-sm-12 col-md-6 mb-3">
-                                        <input type="number" class="form-control" name="username" placeholder="Fullname">
+                                        <input type="text" class="form-control" name="fullname" placeholder="Fullname">
                                     </div>
                                     <div class="col-sm-12 col-md-6 mb-3">
-                                        <input type="number" class="form-control" name="username" placeholder="Lastname">
+                                        <input type="text" class="form-control" name="lastname" placeholder="Lastname">
                                     </div>
                                     <div class="col-sm-12 col-md-6 mb-3">
-                                        <input type="number" class="form-control" name="username" placeholder="Username">
+                                        <input type="text" class="form-control" name="username" placeholder="Username">
                                     </div>
                                     <div class="col-sm-12 col-md-6 mb-3">
-                                        <input type="number" class="form-control" name="username" placeholder="Email">
+                                        <input type="text" class="form-control" name="email" placeholder="Email">
                                     </div>
                                     <div class="col-sm-12 col-md-6 mb-3">
-                                        <input type="number" class="form-control" name="username" placeholder="Password">
+                                        <input type="password" class="form-control" name="password" placeholder="Password">
                                     </div>
                                     <div class="col-sm-12 col-md-6 mb-3">
-                                        <input type="number" class="form-control" name="username" placeholder="Confirm Password">
+                                        <input type="password" class="form-control" name="confirm-password" placeholder="Confirm Password">
                                     </div>
                                 </div>
                                 <div class="mb-3 text-center">

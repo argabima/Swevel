@@ -32,4 +32,11 @@ class User extends BaseController
         ];
         return view('swevel/user/saved_course', $data);
     }
+    public function status()
+    {
+        $data = [
+            'title' => 'status'
+        ];
+        return view('swevel/status/status', $data);
+    }
 }

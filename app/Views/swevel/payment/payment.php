@@ -1,10 +1,9 @@
 <?= $this->extend('layout/template'); ?>
 <?= $this->section('content'); ?>
-
 <main>
     <div class="container p-2 m-auto">
         <div class="row" id="section1">
-            <div class="col-8">
+            <div class="col-lg-8">
                 <div class="card border-3 bg-white">
                     <div class="bg mt-3">
                         <div class="container bg-transparent p-3">
@@ -21,7 +20,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 mb-5 pb-5">
                 <div class="row" id="section2">
                     <div class="card border-3 bg-white">
                         <div class="bg mt-1">
@@ -65,7 +64,7 @@
                             <div class="container bg-transparent p-3">
                                 <div class="row flex-row-reverse">
                                     <div class="col-sm-12 col-md-12 col-lg-12 my-auto">
-                                        <h6 class="fw-bold">Pilih Metode Pembayaran</h6>
+                                        <h6 class="fw-bold mb-4">Pilih Metode Pembayaran</h6>
                                         <div class="accordion" id="accordionExample">
                                             <div class="accordion-item">
                                                 <h4 class="accordion-header" id="headingOne">
@@ -80,17 +79,17 @@
                                                 </h4>
                                                 <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                                     <div class="accordion-body">
-                                                        <table class="table">
+                                                        <table class="table table-borderless">
                                                             <tbody>
                                                                 <tr>
-                                                                    <td scope="row">BNI</td>
-                                                                    <td>Mandiri</td>
-                                                                    <td>Permata</td>
+                                                                    <td><button data-norek="BNI834736983" class="btn bank">BNI</button></td>
+                                                                    <td><button data-norek="Mandiri348932749387" class="btn bank">Mandiri</button></td>
+                                                                    <td><button data-norek="Pertama348932749387" class="btn bank">Permata</button></td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td scope="row">BRI</td>
-                                                                    <td>BCA</td>
-                                                                    <td>Bank Lain</td>
+                                                                    <td><button data-norek="BRI348932749387" class="btn bank">BRI</button></td>
+                                                                    <td><button data-norek="BCA348932749387" class="btn bank">BCA</button></td>
+                                                                    <td><button data-norek="Lain348932749387" class="btn bank">Bank Lain</button></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -98,18 +97,18 @@
                                                 </div>
                                             </div>
                                             <div class="row text-end mt-3">
-                                                <p class="fw-bold">Pay Within</p>
-                                                <p>21.09.21</p>
+                                                <div class="fw-bold">Pay Within</div>
+                                                <div id="time-part" class="text-purple">23.09.44</div>
                                             </div>
-                                            <div class="row mt-1">
+                                            <div class="row mt-3">
                                                 <p style="font-size: 10px;">Order ID #0deaa41e-b467-49f6-8b2b-1f7fd7c2a72e</p>
                                                 <p style="font-size: 10px;">Complete payment from BRI to the virtual account number below.</p>
                                                 <br>
                                                 <h6>Virtual account number</h6>
-                                                <div class="col-6">
-                                                    <h5 type="text" value="" id="virtual_kode">3957001571</h5>
+                                                <div class="col-8">
+                                                    <div type="text" class="fw-bold" value="" id="virtual_kode">-</div>
                                                 </div>
-                                                <div class="col-6">
+                                                <div class="col-4">
                                                     <h5 class="text-end" style="color: #6F32BE; cursor:pointer" onclick="copyToClipboard('#virtual_kode')">COPY</h5>
                                                 </div>
                                             </div>
@@ -122,21 +121,21 @@
                                     <div class="text-end">How to Pay</div>
                                     <div class="accordion-payment">
                                         <div class="row">
-                                            <h5 class="fw-bold">ATM BRI</h5>
+                                            <h5 class="fw-bold mb-3 cursor-pointer">ATM BRI</h5>
                                             <p>1.Lorem</p>
                                             <p>1.Lorem</p>
                                             <p>1.Lorem</p>
                                         </div>
                                         <hr>
                                         <div class="row">
-                                            <h5 class="fw-bold">ATM BRI</h5>
+                                            <h5 class="fw-bold mb-3 cursor-pointer">ATM BRI</h5>
                                             <p>1.Lorem</p>
                                             <p>1.Lorem</p>
                                             <p>1.Lorem</p>
                                         </div>
                                         <hr>
                                         <div class="row">
-                                            <h5 class="fw-bold">ATM BRI</h5>
+                                            <h5 class="fw-bold mb-3 cursor-pointer">ATM BRI</h5>
                                             <p>1.Lorem</p>
                                             <p>1.Lorem</p>
                                             <p>1.Lorem</p>
@@ -146,8 +145,12 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="mt-2 mb-4 w-100">
+                            <a href="" class="btn btn-purple-100 d-block p-2">View Status</a>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -155,6 +158,18 @@
 
 
 <script>
+    $(document).ready(function() {
+        $('.bank').click(function() {
+            let norek = $(this).data('norek');
+            $('#virtual_kode').html(norek)
+        })
+
+    })
+
+    $('.accordion-payment .row h5').click(function() {
+        $(this).nextUntil('.row h5').toggle();
+    });
+
     function copyToClipboard(element) {
         var $temp = $("<input>");
         $("body").append($temp);
@@ -163,10 +178,6 @@
         $temp.remove();
         alert('copy sukses')
     }
-
-    $('.accordion-payment .row h5').click(function() {
-        $(this).nextUntil('.row h5').toggle();
-    });
 </script>
 
 <?= $this->endSection(); ?>

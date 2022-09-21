@@ -24,10 +24,10 @@
                 <li class="nav-item mx-1">
                     <a class="nav-link" href="">Contact Us</a>
                 </li>
+                <li class="nav-item mx-1">
+                    <a class="nav-link" href="">Privacy</a>
+                </li>
             </ul>
-            <div>
-                <a href="/login" class="btn btn-purple text-decoration-none">Login</a>
-            </div>
         </div>
     </div>
 </nav>

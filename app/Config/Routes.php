@@ -70,10 +70,12 @@ $routes->post('/add-artikel', 'Admin::addArticle');
 $routes->get('/admin-event', 'Admin::event');
 $routes->get('/admin-portofolio', 'Admin::portofolio');
 $routes->get('/more-event', 'Admin::moreEvent');
+$routes->get('/payment', 'Admin::payment');
 
 
 // User
 
+$routes->get('/status', 'User::status');
 $routes->get("/materi", "User::materi");
 $routes->get("/kuis", "User::kuis");
 $routes->get("/course-saved", "User::savedCourse");

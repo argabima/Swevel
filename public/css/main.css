@@ -77,8 +77,8 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            background: rgb(159, 136, 195);
-            background: linear-gradient(320deg, rgba(159, 136, 195, 1) -20%, rgba(255, 255, 255, 1) 62%);
+            /* background: rgb(216, 185, 255);
+            background: linear-gradient(210deg, rgba(159, 136, 195, 1) -20%, rgba(255, 255, 255, 1) 62%); */
         }
         
         .gambar {
@@ -214,16 +214,30 @@
             transform: translate(20%, -65%);
             clip-path: circle(49.3% at 0 50%);
         }        
-
-        .accordion-item {
+        
+        .accordion-item.homepage {
             text-decoration: none;
             box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
         }
-        
+
         .accordion-button {
             display: inline-block;
             position: relative;
             height: auto;
+        }
+        .accordion-payment .row h5 {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .accordion-payment .row p {
+            display: none;
+            margin: 0;
+            padding: 0 0 1em;
+        }
+        
+        .accordion-payment .row * {
+            display: none;
         }
         
         .svg-inline--fa {

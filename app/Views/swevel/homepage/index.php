@@ -26,15 +26,11 @@ function circle()
     <!-- /.Desktop -->
     <section1 class="box">
         <div class="container">
-            <div class="col-sm-7 mt-5 mb-5">
+            <div class="col-lg-7 mt-5 mb-5">
                 <div class="text">
-                    <h1 class="fw-bold">One of <span class="ch_color">Information Technology</span> Service Industry
-                    </h1>
-
-                    <br><br>
-                    <p class="cover-text">PT. Swevel Universal Media is one of Information Technology Service Industry that gives service excellence quality. Point of product of PT. Swevel Universal Media prioritize System End User and gives creative solution IT. PT. Swevel
+                    <h1 class="fw-bold">One of <span class="ch_color">Information Technology</span> Service Industry</h1>
+                    <p class="cover-text my-5">PT. Swevel Universal Media is one of Information Technology Service Industry that gives service excellence quality. Point of product of PT. Swevel Universal Media prioritize System End User and gives creative solution IT. PT. Swevel
                         Universal Media focus in WEB Developer and Mobile Smart Phone Application.</p>
-                    <br><br>
                 </div>
                 <div class="button-wrapper">
                     <button class="button5"><strong>MORE &nbsp;</strong>
@@ -64,7 +60,6 @@ function circle()
     </section1>
 
     <!-- /.Pengenalan -->
-
     <section class="box2 pt-5">
         <div class="container pt-5">
             <div class="row" id="section2">
@@ -77,7 +72,7 @@ function circle()
                 </div>
                 <div class="col-lg-7 col-12">
                     <div class="accordion" id="accordionExample">
-                        <div class="accordion-item mb-3">
+                        <div class="accordion-item homepage mb-3">
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     <div class="row p-2">
@@ -100,7 +95,7 @@ function circle()
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item mb-3">
+                        <div class="accordion-item homepage mb-3">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div class="row p-2">
@@ -122,7 +117,7 @@ function circle()
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item mb-3">
+                        <div class="accordion-item homepage mb-3">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     <div class="row p-2">

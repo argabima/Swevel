@@ -1,6 +1,12 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+.cursor-pointer{
+    cursor: pointer;
+}
+.bg-dark-blue{
+    background: #182430;
+}
 
 .text-purple{
     color: #9660EA;
@@ -53,6 +59,12 @@
     border-bottom: 3px solid #773CD3;
 }
 
+/* custom bootstrap */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+/* end custom bootstrap */
 
 
 /*  */
@@ -158,29 +170,30 @@
 .container-milestone{
     height: 100vh;        
 }
-
-.line-milestone{
-    position: absolute;        
-    left: 23%;
-    width: 2px;                                                               
-    background-color: rgb(56, 53, 53);                  
-}
 .milestone-content{
-    opacity: .2;
-    margin-bottom: 100px;
+    opacity: .4;
+    /* margin-bottom: 100px; */
     cursor: pointer;
 }
 .milestone-content.active{
     opacity: 1;            
 }
+.line-milestone-1,
+.line-milestone-2{
+    width: 2px;
+    background-color: black;   
+    height: 50px;
+    margin: 0 auto;
+}
 .bead{
-    position: absolute;
+    /* position: absolute; */
     height: 10px;
     width: 10px;
     z-index: 5;
     border-radius: 50%;
-    left: calc(22% + 9px);
+    /* left: calc(22% + 9px); */
     background: white;
+    margin: 0 auto;
 }
 .bead.active{
     background: #773CD3;
@@ -511,9 +524,7 @@ section#page-first {
     transform: translate(-15%, 150%);
     z-index: 5;
 }
-.card-course {
-    /* background: rgb(119, 60, 211);
-    background: linear-gradient(18deg, rgba(119, 60, 211, 1) -20%, rgba(255, 255, 255, 1) 21%); */
+.card-course {    
     background: rgb(159,136,195);
     background: linear-gradient(16deg, rgba(159,136,195,1) -20%, rgba(255,255,255,1) 26%);
 }
@@ -566,17 +577,11 @@ section#page-first {
 :root{
     --ck-border-radius: 10px;    
 }
-
-
 .input-title::placeholder,
 .input-textarea::placeholder
 {
     font-size: 15px;
 }
-
-
-
-
 
 
 /* USER */
@@ -621,3 +626,86 @@ section#page-first {
         left: calc(14% + 1px);                
     }
 }
+
+
+
+/* Status */
+ #status * {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+  }
+  #status .sidebar {
+    height: 100vh;
+    width: 250px;
+    margin-top: 90px;
+    list-style: none;
+    background-color: #ffffff;    
+  }
+  #status .sidebar li a {
+    display: flex;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    /* margin-bottom: 30px; */
+    text-transform: uppercase;
+  }
+  #status .sidebar li a:hover {
+    background-color: rgba(75, 75, 75, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: ease .3s;
+  }
+  #status .side-bar{
+      height: 100%;
+      width: 20%;
+      float: left;
+  }
+  #status .main {
+    margin-left: 250px;
+    padding: 85px;
+    width: calc(100% - 250px);
+    height: 100%;
+    background: #FCFCFC;
+  }
+  #status .card{
+      padding: 50px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: #888888 0px 0px 20px;
+  }
+  #status .card:hover{
+      box-shadow: #888888 0px 0px 30px;
+  }
+  #status .card-text{
+      font-size: 20px;
+      font-weight: 600px;
+      margin-bottom: 20px;
+      color: red;
+  }
+  #status .pembayaran{
+      margin-top: 30px;
+      margin-bottom: 40px;
+  }
+  #status .viewcourse{
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  #status .btn{
+      background-color: #45188B;
+      color: rgb(255, 255, 255);
+      border-radius: 30px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600px;
+      /* position: absolute; */
+      /* right: 80px; */
+      /* bottom: 80px; */
+  }
+  #status .status{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      position: absolute;
+      right: 50px;
+  }
