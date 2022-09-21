@@ -7,7 +7,7 @@ class Course extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Course'
+            'title' => 'Artikel'
         ];
         return view('swevel/course/course', $data);
     }

@@ -20,14 +20,8 @@
     </div>
 
     <div class="list-first">
-        <a href="/event" class="text-decoration-none">
-            <div class="box-list">Event.</div>
-        </a>
-        <a href="/course" class="text-decoration-none">
-            <div class="box-list">Course.</div>
-        </a>
-        <a href="/training" class="text-decoration-none">
-            <div class="box-list">Training.</div>
-        </a>
+        <div class="box-list">Event.</div>
+        <div class="box-list">Course.</div>
+        <div class="box-list">Training.</div>
     </div>
 </section>

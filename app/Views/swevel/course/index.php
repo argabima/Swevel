@@ -28,10 +28,10 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="input-group mt-3 mb-3">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-search" type="submit"><a href="#" class="search_icon"><i class="fas fa-search"></i></a></button>
+                    <div class="search-event mt-4 w-50">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Search more event here">
+                            <button class="btn btn-purple" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
                         </div>
                     </div>
                 </div>

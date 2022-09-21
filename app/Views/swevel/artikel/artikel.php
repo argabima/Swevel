@@ -73,5 +73,4 @@
     </div>
 </section>
 <?= $this->include('swevel/homepage/footer'); ?>
-<?= $this->include('swevel/training/footer'); ?>
 <?= $this->endSection(); ?>

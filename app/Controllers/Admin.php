@@ -4,6 +4,14 @@ namespace App\Controllers;
 
 class Admin extends BaseController
 {
+    // public function index()
+    // {
+    //     $data = [
+    //         'title' => 'Admin'
+    //     ];
+    //     return view('swevel/admin/admin-testimoni', $data);
+    // }
+
     public function index()
     {
         $data = [

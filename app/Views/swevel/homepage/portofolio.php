@@ -31,12 +31,3 @@ function line()
         </div>
     </div>
 </section>
-
-<script>
-    $(document).ready(function() {
-        $('#datepicker').datepicker();
-        $('#inputfile').click(function() {
-            $('#formfile').click();
-        });
-    })
-</script>

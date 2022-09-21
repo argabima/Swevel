@@ -1,17 +1,47 @@
-// ================== Team =====================
-$(".card-team").hover(function() {
-    let heightCardTeam = $(this)[0].scrollHeight;
-    $(this).removeClass('opacity-50').css({ 'transition': 'all .3s', 'box-shadow': '0px 1px 10px 10px #ddd', 'height': heightCardTeam + 20 });
-    let heightImgPrimary = $(this).find('.card-body')[0].scrollHeight;
-    $(this).find('.gradient').css({ 'display': 'block', 'height': heightImgPrimary + 2, 'position': 'absolute', "background": "rgb(255,255,255)", "background": "linear-gradient(22deg, rgba(255,255,255,0.6578803396358543) 19%, rgba(255,255,255,0) 72%)", 'bottom': '100px' })
+
+// Team
+var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+
+  // Milestone
+$(".milestone-content").hover( function() {
+    $(this).addClass("active").css('transition','ease .5s').prevAll().removeClass("active");
+    $(this).nextAll().removeClass("active");
+    $(this).find('.bead').addClass('active').css('transition','all .7s');            
 });
-$(".card-team").mouseleave(function() {
-    let heightCardTeam = $(this)[0].scrollHeight;
-    $(this).addClass('opacity-50').css({ "transition": "ease .3s", 'box-shadow': 'none', 'height': heightCardTeam - 20 });
-    $(this).find('.gradient').css({ 'display': 'none' })
-});
+$('.milestone-content').mouseleave(function(){
+    $(this).find('.bead').removeClass('active');
+})
 
+$('.modal-content-milestone').css('border-radius','20px');
+// Jquery
+let heightContainerMilestone = $('.container-milestone')[0].scrollHeight;        
 
-// Admin
-
-
+$('.line-milestone').css('height',heightContainerMilestone - 250);

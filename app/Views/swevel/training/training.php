@@ -2,38 +2,25 @@
     <div class="container mt-5">
         <div class="most-popular mx-5 px-4">
             <h2 class="fw-bold">Most Popular</h2>
-            <div class="box-training pt-5">
-                <div class="row pb-5">
-                    <div class="splide splide-training">
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <?php for ($i = 0; $i < 9; $i++) : ?>
-                                <?php endfor; ?>
-                                <div class="splide__slide">
-                                    <div class="card card-training  mx-2 border-0">
-                                        <div class="card-body text-center">
-                                            <img src="/img/Frame 57.png" alt="" class="img-primary">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="card card-training  mx-2 border-0">
-                                        <div class="card-body text-center">
-                                            <img src="/img/Frame 58.png" alt="" class="img-primary">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="splide__slide">
-                                    <div class="card card-training  mx-2 border-0">
-                                        <div class="card-body text-center">
-                                            <img src="/img/Image 9.png" alt="" class="img-primary">
-                                        </div>
+            <div class="slide-container swiper">
+                <div class="slide-content text-center">
+                    <div class="card-wrapper swiper-wrapper">
+                        <?php for ($i = 1; $i < 10; $i++) : ?>
+                            <div class="swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="/img/Frame 58.png" alt="" class="card-img">
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        <?php endfor; ?>
                     </div>
                 </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
 
@@ -43,7 +30,7 @@
                 <div class="card mb-3 border-0 mb-5 ps-4 py-3">
                     <div class="row g-0">
                         <div class="col-md-3 text-sm-center">
-                            <img src="/img/Frame 57.png" class="img-fluid rounded-start" alt="..." style="max-width: 200px;">
+                            <img src="/img/image 9.png" class="img-fluid rounded-start" alt="..." style="max-width: 200px;">
                         </div>
                         <div class="col-md-7">
                             <div class="card-body">
@@ -66,34 +53,3 @@
         </div>
     </div>
 </section>
-
-<script>
-    $(document).ready(function() {
-        // Slider Team
-        sliderTeam();
-    })
-
-    let sliderTeam = () => {
-        let mediaSm = window.matchMedia("(max-width: 576px)");
-        let mediaMd = window.matchMedia("(max-width: 577px)");
-        if (mediaSm.matches) {
-            var perPage = 1;
-        } else if (mediaMd.matches) {
-            var perPage = 3;
-        } else {
-            var perPage = 3;
-        }
-        var splide = new Splide('.splide.splide-training', {
-            // type: 'loop',
-            perPage: perPage,
-            rewind: true,
-            arrows: false,
-            // autoplay: true,
-            // speed: 2000,
-            // width: '100%',
-            // padding: '10px',
-        });
-
-        splide.mount();
-    }
-</script>

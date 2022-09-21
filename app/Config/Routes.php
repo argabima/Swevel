@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\Course;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -36,8 +38,10 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/login', 'Home::auth');
-
+$routes->get('/kontak', 'Kontak::index');
+$routes->delete('/kontak/(:num)', 'Kontak::delete/$1');
+$routes->post('/kontak/save', 'Kontak::save');
+$routes->post('/kontak/update', 'Kontak::update');
 
 
 // training page
@@ -55,9 +59,15 @@ $routes->get('/artikel', 'Artikel::index');
 $routes->get('/detail-artikel', 'Artikel::detailArtikel');
 
 // Course
-$routes->get('/course', 'Course::index');
+$routes->get('course', 'Course::index');
 $routes->get('/detail-course', 'Course::detailCourse');
 
+//Admin
+$routes->get('admin', 'Admin::index');
+
+$routes->get('/payment', 'Payment::index');
+
+$routes->get('/submission', 'Submission::index');
 
 // ADMIN
 $routes->get('/dashboard', 'Admin::index');
@@ -70,7 +80,7 @@ $routes->post('/add-artikel', 'Admin::addArticle');
 $routes->get('/admin-event', 'Admin::event');
 $routes->get('/admin-portofolio', 'Admin::portofolio');
 $routes->get('/more-event', 'Admin::moreEvent');
-$routes->get('/payment', 'Admin::payment');
+
 
 
 // User
@@ -79,6 +89,8 @@ $routes->get('/status', 'User::status');
 $routes->get("/materi", "User::materi");
 $routes->get("/kuis", "User::kuis");
 $routes->get("/course-saved", "User::savedCourse");
+$routes->get('/payment', 'User::payment');
+
 
 
 //  PERCOBAAN

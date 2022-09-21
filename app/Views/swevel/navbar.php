@@ -26,7 +26,7 @@
                 </li>
             </ul>
             <div>
-                <a href="/login" class="btn btn-purple text-decoration-none">Login</a>
+                <button class="btn btn-purple">Login</button>
             </div>
         </div>
     </div>

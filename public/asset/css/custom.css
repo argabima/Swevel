@@ -232,13 +232,13 @@ footer .bg-white {
   font-weight: bold;
   letter-spacing: 1px;
 }
-/* #contact #contactUs form #btnSend {
-} */
-#contact #contactUs form #btnSend:hover {
+#contact #contactUs form #btnSend {
   box-shadow: #000 0 2px 7px 2px;
+}
+#contact #contactUs form #btnSend:hover {
   background-color: #fff;
   color: #45188b;
-  /* box-shadow: none; */
+  box-shadow: none;
   /* font-size: 10pt; */
 }
 #contact #contactUs form input[type="text"],
@@ -312,20 +312,22 @@ footer .bg-white {
 /* ------------ EVENT ----------- */
 /* ------------------------------ */
 .btn-event {
+  box-shadow: #45188b 0 2px 7px 2px;
   color: #fff;
 }
 .btn-event:hover {
-  box-shadow: #45188b 0 1px 3px 1px;
+  box-shadow: none;
   /* font-size: 10pt; */
   color: #fff;
 }
 .btn-event-lg {
+  box-shadow: #45188b 0 2px 7px 2px;
   color: #fff;
   padding: 0.5rem 1rem;
   font-size: 1rem;
 }
 .btn-event-lg:hover {
-  box-shadow: #45188b 0 1px 3px 1px;
+  box-shadow: none;
   /* font-size: 0.8rem; */
   color: #fff;
 }
@@ -356,15 +358,6 @@ footer .bg-white {
   background: transparent;
   box-shadow: none;
 }
-.splide__pagination {
-  display: none;
-}
-.splide .card-footer .detail {
-  display: none;
-}
-.splide .card:hover .card-footer div:nth-child(2) {  
-  display: block;
-}
 @media (max-width: 576px) {
   #event #event1 .text {
     margin-top: 2rem;
@@ -379,6 +372,9 @@ footer .bg-white {
   #event #event1 .row-1 {
     margin-top: 5rem;
   }
+}
+.splide__pagination {
+  display: none;
 }
 /* Category Event */
 #popular-event,
@@ -416,20 +412,20 @@ footer .bg-white {
 
 #category-event .card,
 .card-event {
-  border-radius: 25px;  
+  border-radius: 25px;
 }
 #category-event .card:hover,
 .card-event:hover {
-  box-shadow: 0px 1px 5px 1px #ddd;  
+  box-shadow: 0px 1px 5px 1px #ddd;
 }
 #category-event .card .card-body,
 .card-event .card-body {
-  border-bottom: 1px solid #fff;  
+  border-bottom: 1px solid #fff;
 }
 #category-event .card .card-footer,
 .card-event .card-footer {
   border-top: 1px solid #fff;
-  background-color: transparent;  
+  background-color: transparent;
 }
 
 /* ------------------------------------- */
@@ -461,7 +457,7 @@ footer .bg-white {
 /* -------------------------------- */
 /* ------------ ARTICLE ----------- */
 /* -------------------------------- */
-/* @media (max-width: 576px) {
+@media (max-width: 576px) {
   #article .judul {
     margin-top: 1rem;
   }
@@ -484,7 +480,7 @@ footer .bg-white {
   text-indent: 50px;
   text-align: justify;
   letter-spacing: 1px;
-} */
+}
 
 /* ---------------------------- */
 /* ------------ FAQ ----------- */
@@ -629,120 +625,6 @@ footer .bg-white {
   text-decoration: none;
   color: #000;
 }
-
-
-/* login */
-#auth{  
-margin-top: 120px;
-}
-#auth .wave1,
-#auth .wave2 {
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  position: absolute;
-}
-#auth section * {
-  z-index: 2;
-}
-#auth .wave1 {
-  height: 30%;
-  background: url("/img/login/wave1.png");
-  background-size: cover;
-  top: 0;
-  right: 0;
-}
-#auth .wave2 {
-  height: 30%;
-  background: url("/img/login/wave2.png");
-  background-size: cover;
-  bottom: 0;
-  left: 0;
-}
-#auth .card {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border-top: 1px solid transparent;
-  border-bottom: 3px solid #ddd;
-  border-left: 1px solid #ddd;
-  border-right: 1px solid #ddd;
-}
-#auth input {
-  padding-left: 2rem;
-  background-color: #ededed;
-  padding-top: 0.875rem;
-  padding-bottom: 0.875rem;
-}
-#auth input,
-#auth .btn-login {
-  border-radius: 30px;
-  box-shadow: none;
-  border: none;
-}
-.btn-login {
-  font-family: monospace;
-  color: #fff;
-  font-weight: 700;
-  font-size: 1em;
-  background-image: linear-gradient(
-    90deg,
-    hsl(263deg 71% 32%) 0%,
-    hsl(264deg 56% 37%) 5%,
-    hsl(266deg 45% 41%) 9%,
-    hsl(267deg 37% 45%) 14%,
-    hsl(267deg 30% 49%) 18%,
-    hsl(268deg 27% 53%) 23%,
-    hsl(269deg 25% 57%) 27%,
-    hsl(270deg 22% 61%) 32%,
-    hsl(270deg 19% 65%) 36%,
-    hsl(271deg 14% 70%) 41%,
-    hsl(271deg 8% 74%) 45%,
-    hsl(0deg 0% 78%) 50%,
-    hsl(271deg 8% 74%) 55%,
-    hsl(271deg 14% 70%) 59%,
-    hsl(270deg 19% 65%) 64%,
-    hsl(270deg 22% 61%) 68%,
-    hsl(269deg 25% 57%) 73%,
-    hsl(268deg 27% 53%) 77%,
-    hsl(267deg 30% 49%) 82%,
-    hsl(267deg 37% 45%) 86%,
-    hsl(266deg 45% 41%) 91%,
-    hsl(264deg 56% 37%) 95%,
-    hsl(263deg 71% 32%) 100%
-  );
-}
-.btn-login:hover {
-  background: #45188b;
-  color: #fff;
-}
-#auth p {
-  margin-bottom: 0;
-}
-#auth a {
-  text-decoration: none;
-  color: #773cd3;
-  font-size: 12pt;
-  font-family: monospace;
-  cursor: pointer;
-}
-#auth #login a {
-  font-style: italic;
-}
-@media (max-width: 576px) {
-  #auth .wave1 {
-    display: none;
-  }
-  #auth .wave2 {
-    display: none;
-  }
-  #auth code * {
-    font-size: 12pt;
-  }
-}
-/* end auth login */
-
 
 @media (max-width: 576px) {
   #kebijakan-privasi #row {

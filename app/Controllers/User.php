@@ -39,4 +39,11 @@ class User extends BaseController
         ];
         return view('swevel/status/status', $data);
     }
+    public function payment()
+    {
+        $data = [
+            'title' => 'Payment',
+        ];
+        return view('swevel/payment/payment', $data);
+    }
 }

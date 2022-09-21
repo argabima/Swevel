@@ -18,7 +18,7 @@ function circle1()
 ?>
 
 <section id="service">
-    <div class="container">
+    <div class="container mt-5 pt-5">
         <div class="text-center mb-5">
             <h1 class="fw-bold">Our <span class="text-purple">Servive</span></h1>
             <div class="">

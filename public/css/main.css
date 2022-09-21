@@ -77,8 +77,8 @@
             width: 100%;
             height: 100%;
             overflow: hidden;
-            /* background: rgb(216, 185, 255);
-            background: linear-gradient(210deg, rgba(159, 136, 195, 1) -20%, rgba(255, 255, 255, 1) 62%); */
+            background: rgb(159, 136, 195);
+            background: linear-gradient(320deg, rgba(159, 136, 195, 1) -20%, rgba(255, 255, 255, 1) 62%);
         }
         
         .gambar {
@@ -191,53 +191,32 @@
             background: linear-gradient(210deg, rgba(159, 136, 195, 1) -20%, rgba(255, 255, 255, 1) 62%);
         }
         
-        .big-O {        
-            transform: translate(45%, -25%);
-            height: 200px;
-            width: 400px;
-            border-radius: 200px 200px 0 0;
+        .big-O {
+            position: absolute;
+            width: 360px;
+            height: 360px;
+            border-radius: 100%;
             background-color: #D8B9FF;
-            rotate: 95deg;            
-        }
-        .big-1 {        
-            transform: translate(-10%, -25%);
-            height: 200px;
-            width: 400px;
-            border-radius: 200px 200px 0 0;
-            background-color: transparent;
-            border: 4px solid yellow;
-            rotate: 100deg;            
+            z-index: 0;
+            margin-top: 50px;
+            margin-right: 10px;
         }
         
-        .gmbr {            
-            z-index: 2;                        
-            transform: translate(20%, -65%);
-            clip-path: circle(49.3% at 0 50%);
-        }        
+        .gmbr {
+            position: relative;
+            z-index: 2;
+            transform: translate(20%, 0%);
+        }
         
-        .accordion-item.homepage {
+        .accordion-item #main {
             text-decoration: none;
             box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px, rgba(0, 0, 0, .14) 0 6px 10px 0, rgba(0, 0, 0, .12) 0 1px 18px 0;
         }
-
+        
         .accordion-button {
             display: inline-block;
             position: relative;
             height: auto;
-        }
-        .accordion-payment .row h5 {
-            display: block;
-            cursor: pointer;
-        }
-        
-        .accordion-payment .row p {
-            display: none;
-            margin: 0;
-            padding: 0 0 1em;
-        }
-        
-        .accordion-payment .row * {
-            display: none;
         }
         
         .svg-inline--fa {
@@ -257,6 +236,21 @@
             margin-right: 50px;
             background-color: #D9D9D9;
             border-radius: 100%;
+        }
+        
+        .accordion-payment .row h5 {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .accordion-payment .row p {
+            display: none;
+            margin: 0;
+            padding: 0 0 1em;
+        }
+        
+        .accordion-payment .row * {
+            display: none;
         }
         /* RESPONSIVE CSS
 -------------------------------------------------- */

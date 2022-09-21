@@ -109,76 +109,43 @@
         </div>
 
         <div class="similiar-event mb-5">
-            <div class="h3 fw-bold mb-4">Similiar Event</div>
-            <section id="similiar-event" class="mb-5 pb-5">
-                <div class="row ">
-                    <div class="splide splide-detail-training">
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <?php for ($i = 0; $i < 5; $i++) : ?>
-                                    <div class="col-md-4 splide__slide m-2">
-                                        <div class="card border-0">
-                                            <div class="text-center">
-                                                <img src="/img/Frame 58.png" class="card-img-top" alt="..." style="width: 200px;">
-                                            </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title text-purple">Training Softskill</h5>
-                                                <p class="card-text small">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="small text-decoration-line-through">Rp 500.000</div>
-                                                        <div class="text-danger fw-bold">Rp 325.000</div>
-                                                    </div>
-                                                    <div class="col-6 text-center">
-                                                        <button class="btn btn-sm btn-purple">Join Now</button>
-                                                    </div>
-                                                </div>
-                                            </div>
+            <div class="h3 fw-bold">Similiar Event</div>
+            <div class="slide-container swiper">
+                <div class="slide-content">
+                    <div class="card-wrapper swiper-wrapper">
+                        <?php for ($i = 1; $i < 5; $i++) :  ?>
+                            <div class="card-team swiper-slide">
+                                <div class="image-content">
+                                    <span class="overlay"></span>
+                                    <div class="card-image">
+                                        <img src="/img/Frame 58.png" alt="" class="card-img">
+                                    </div>
+                                </div>
+                                <div class="card-content ps-4">
+                                    <h2 class="name fw-bold text-purple-100">Training Softskill</h2>
+                                    <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos alias itaque consequatur magni tenetur in quo molestias suscipit quibusdam et.</p>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6  d-block">
+                                            <div class="card-text text-decoration-line-through text-secondary"><small>Rp 500.000</small></div>
+                                            <div class="card-text h5 fw-bold text-danger">Rp 325.000</div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6  my-sm-3">
+                                            <button class="btn btn-sm btn-purple-100">Join Now</button>
                                         </div>
                                     </div>
-                                <?php endfor; ?>
+                                </div>
                             </div>
-                        </div>
+                        <?php endfor; ?>
                     </div>
                 </div>
 
-            </section>
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
         </div>
     </div>
 </section>
-
-
-
-<script>
-    $(document).ready(function() {
-        // Slider Team
-        sliderTeam();
-    })
-
-    let sliderTeam = () => {
-        let mediaSm = window.matchMedia("(max-width: 576px)");
-        let mediaMd = window.matchMedia("(max-width: 577px)");
-        if (mediaSm.matches) {
-            var perPage = 1;
-        } else if (mediaMd.matches) {
-            var perPage = 3;
-        } else {
-            var perPage = 3;
-        }
-        var splide = new Splide('.splide.splide-detail-training', {
-            // type: 'loop',
-            perPage: perPage,
-            rewind: true,
-            arrows: false,
-            // autoplay: true,
-            // speed: 2000,
-            // width: '100%',
-            // padding: '10px',
-        });
-
-        splide.mount();
-    }
-</script>
 
 <?= $this->include('swevel/homepage/footer'); ?>
 <?= $this->include('swevel/training/footer'); ?>

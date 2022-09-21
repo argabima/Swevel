@@ -7,17 +7,9 @@ class Home extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Swevel'
+            'title' => 'percobaan'
         ];
         return view('swevel/index_homepage', $data);
-    }
-
-    public function auth()
-    {
-        $data = [
-            'title' => 'Login',
-        ];
-        return view('swevel/auth', $data);
     }
     public function faq()
     {
