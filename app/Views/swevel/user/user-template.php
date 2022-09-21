@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="/asset/vendor/fontawesome612/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,300&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Swiper CSS for Team-->
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
@@ -27,10 +26,20 @@
 </head>
 
 <body>
-
-    <?= $this->renderSection('content'); ?>
-
-    <?= $this->renderSection('user'); ?>
+    <?= $this->include('swevel/navbar'); ?>
+    <section id="user" class="d-flex">
+        <div class="side-bar">
+            <ul class="sidebar">
+                <li><a href="#" class="active fw-bold">All Transaction</a></li>
+                <li><a href="#">Done Transaction</a></li>
+                <li><a href="#">Waiting for Payment</a></li>
+                <li><a href="#">Failed Transaction</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <?= $this->renderSection('content'); ?>
+        </div>
+    </section>
 
 
 
@@ -41,49 +50,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
     <!-- Swiper JS for Team-->
     <script src="/js/swiper-bundle.min.js"></script>
-    <script src="/js/main_jquery.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- <script src="/js/main_jquery.js"></script> -->
 
     <script>
         $(document).ready(function() {
-            searchHover = function() {
-                let input1 = $('#event1 .input1 input');
-                input1.on('focus', function() {
-                    $(this).parent().addClass('focus');
-                });
-                input1.on('blur', function() {
-                    if ($(this).val().length == 0) {
-                        $(this).parent().removeClass('focus');
-                    }
-                });
-            }
-            searchHover();
-
-            slider = function() {
-                let mediaSm = window.matchMedia("(max-width: 576px)");
-                let mediaMd = window.matchMedia("(min-width: 577px)");
-                if (mediaSm.matches) {
-                    var perPage = 1;
-                } else if (mediaMd.matches) {
-                    var perPage = 3;
-                } else {
-                    var perPage = 4;
-                }
-                var splide = new Splide('.splide', {
-                    type: 'loop',
-                    perPage: perPage,
-                    rewind: true,
-                    // autoplay: true,
-                    // speed: 2000,
-                    // width: '100%',
-                    // padding: '10px',
-                });
-
-                splide.mount();
-            }
-            slider();
             $(window).resize(function() {
                 slider();
+                sliderTeam();
             });
         });
     </script>

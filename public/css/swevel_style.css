@@ -464,4 +464,91 @@ section#page-first {
     .bead{                
         left: calc(14% + 1px);                
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+
+
+/* Status */
+ #status * {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+  }
+  #status .sidebar {
+    height: 100vh;
+    width: 250px;
+    margin-top: 90px;
+    list-style: none;
+    background-color: #ffffff;    
+  }
+  #status .sidebar li a {
+    display: flex;
+    padding: 25px;
+    text-decoration: none;
+    color: black;
+    /* margin-bottom: 30px; */
+    text-transform: uppercase;
+  }
+  #status .sidebar li a:hover {
+    background-color: rgba(75, 75, 75, 0.3);
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: ease .3s;
+  }
+  #status .side-bar{
+      height: 100%;
+      width: 20%;
+      float: left;
+  }
+  #status .main {
+    margin-left: 250px;
+    padding:  50px 85px;
+    width: calc(100% - 250px);
+    height: 100%;
+    background: #FCFCFC;
+  }
+  #status .card{
+      padding: 50px;
+      margin-bottom: 30px;
+      border-radius: 20px;
+      box-shadow: #888888 0px 0px 20px;
+  }
+  #status .card:hover{
+      box-shadow: #888888 0px 0px 30px;
+  }
+  #status .card-text{
+      font-size: 20px;
+      font-weight: 600px;
+      margin-bottom: 20px;
+      color: red;
+  }
+  #status .pembayaran{
+      margin-top: 30px;
+      margin-bottom: 40px;
+  }
+  #status .viewcourse{
+      margin-top: 30px;
+      margin-bottom: 30px;
+  }
+  #status .btn{
+      background-color: #45188B;
+      color: rgb(255, 255, 255);
+      border-radius: 30px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 600px;
+      /* position: absolute; */
+      /* right: 80px; */
+      /* bottom: 80px; */
+  }
+  #status .status{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      position: absolute;
+      right: 50px;
+  }
+>>>>>>> a07f48dc75d6abf392b4bc353256f281ab2aee4d
